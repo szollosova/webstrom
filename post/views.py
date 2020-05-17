@@ -1,9 +1,8 @@
-from django.views.generic.detail import DetailView
-from django.views.generic.list import ListView
+from django.views.generic import DetailView, ListView
 
 
 class PostDetailView(DetailView):
-    pass
+    template_name = 'post/post.html'
 
 
 class PostListView(ListView):
